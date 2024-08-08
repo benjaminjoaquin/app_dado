@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6EDED"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="279dp"
+        android:layout_height="438dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="59dp">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jugando al dado"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="299dp">
+
+            <TableRow
+                android:layout_width="302dp"
+                android:layout_height="411dp"
+                android:background="@color/teal_200">
+
+                <LinearLayout
+                    android:layout_width="139dp"
+                    android:layout_height="match_parent"
+                    android:background="#934E4E"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Cara 1 :"
+                        android:textAlignment="center"
+                        android:textColor="#F8F5F5"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Cara 2 :"
+                        android:textAlignment="center"
+                        android:textColor="#F3EDED"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Cara 3 :"
+                        android:textAlignment="center"
+                        android:textColor="#FAF4F4"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Cara 4 :"
+                        android:textAlignment="center"
+                        android:textColor="#F8F0F0"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Cara 5 :"
+                        android:textAlignment="center"
+                        android:textColor="#F6EBEB"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Cara 6 :"
+                        android:textAlignment="center"
+                        android:textColor="#FDF8F8"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#501818"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cara1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#FAF5F5"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/cara2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:lineSpacingExtra="8sp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#F8F4F4"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/cara3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#FBF6F6"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/cara4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#F8F5F5"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/cara5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#FBF9F9"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/cara6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#F6F4F4"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/tirar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BF5252"
+            android:onClick="tirarDado"
+            android:text="Tirar dado"
+            android:textSize="20sp"
+            app:backgroundTint="#BA3C3C" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cara que cayó más veces"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FBF9F9"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
